@@ -1,0 +1,10 @@
+val x = "Hello, World" 
+val r1 = x.reverse 
+val r2 = x.reverse 
+r1 == r2 
+
+val r1 = "Hello, World".reverse 
+val r2 = "Hello, World".reverse 
+r1 == r2 
+
+

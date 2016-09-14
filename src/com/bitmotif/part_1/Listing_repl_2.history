@@ -1,0 +1,10 @@
+val x = new StringBuilder("Hello") 
+val y = x.append(", World") 
+val r1 = y.toString 
+val r2 = y.toString 
+r1 == r2 
+
+val x = new StringBuilder("Hello") 
+val r1 = x.append(", World").toString 
+val r2 = x.append(", World").toString 
+r1 == r2 
