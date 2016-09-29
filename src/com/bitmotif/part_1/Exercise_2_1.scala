@@ -1,3 +1,4 @@
+package com.bitmotif.part_1
 	
 object Exercise_2_1 {
 
