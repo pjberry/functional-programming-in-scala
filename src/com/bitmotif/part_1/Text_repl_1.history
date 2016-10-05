@@ -1,0 +1,46 @@
+def partial[A, B, C](a: A, f: (A, B) => C): B => C = ???
+
+def partial[A, B, C](a: A, f: (A, B) => C): B => C = (b: B) => ???
+
+def partial[A, B, C](a: A, f: (A, B) => C): B => C = (b: B) => f(a, b)
+
+def partialTwo[A, B, C](a: A, f: (A, B) => C): B => C = f(a, _)
+
+partialTwo == partial
+
+val partial[A, B, C]: (a: A, (A, B) => C) => B => C = ??? 
+
+val partial[A, B, C]: (A, (A, B) => C) => B => C = ??? 
+
+val partial: (A, (A, B) => C) => B => C = ??? 
+
+val partial: (A, (A, B) => C) => (B) => C = ??? 
+
+val partial[A]: (A, (A, B) => C) => (B) => C = ??? 
+
+def partial[A, B, C](a: A, f: (A, B) => C): B => C = (b: B) => f(a, b)
+
+val x = partial
+
+val x = partial(_, _)
+
+val x = partial(_)
+
+val x = partial(_, _)
+
+val x = partial(_: A, _: (A,B) => C)
+
+val x = partial[Int, String, Double](_, _)
+
+val y = partialTwo[Int, String, Double](_, _)
+
+y == x
+
+y.getClass
+
+x.getClass
+
+y.hashCode
+
+x.hashCode
+
